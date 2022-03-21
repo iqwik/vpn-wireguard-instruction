@@ -17,7 +17,7 @@
 
 Most likely you have `eth0`, but probably another one as `ens3` or other. This name of network interface we'll use in the config `/etc/wireguard/wg0.conf`, which we should create before.
 
-### Put into `/etc/wireguard/wg0.conf`:
+### Insert into `/etc/wireguard/wg0.conf`:
 ```
 [Interface]
 PrivateKey = <private_key>
