@@ -61,7 +61,7 @@ systemctl restart wg-quick@wg0.service
 systemctl status wg-quick@wg0.service
 ```
 
-Create new client config file on your local PC - `yourname.conf`:
+### Create new client config file on your local PC - `yourname.conf`:
 ```
 [Interface]
 PrivateKey = <CLIENT-PRIVATE-KEY>
