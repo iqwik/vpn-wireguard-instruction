@@ -1,15 +1,15 @@
 # vpn-wireguard
 
-### Updates packages:
+### Update packages:
 #### `apt update && apt upgrade -y`
 
 ### Install wireguard:
 #### `apt install -y wireguard`
 
-### Generates server keys:
+### Generate server keys:
 #### `wg genkey | tee /etc/wireguard/privatekey | wg pubkey | tee /etc/wireguard/publickey`
 
-###  Modifies File Permissions:
+###  Modify file permissions:
 #### `chmod 600 /etc/wireguard/privatekey`
 
 ### Check network interface:
@@ -43,7 +43,7 @@ systemctl start wg-quick@wg0.service
 systemctl status wg-quick@wg0.service
 ```
 
-### Generates clients keys:
+### Generate client keys:
 #### `wg genkey | tee /etc/wireguard/yourname_privatekey | wg pubkey | tee /etc/wireguard/yourname_publickey`
 
 ### Add to server config `/etc/wireguard/wg0.conf`:
